@@ -18,6 +18,10 @@ describe('Bank', () => {
       bank.withdraw(1000);
       expect(bank.total).toEqual(1000.00);
     })
+
+    it('should get the date', () => {
+      expect(bank.getTheDate()).toEqual(25);
+    })
   })
 
 })
