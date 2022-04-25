@@ -9,6 +9,11 @@ class Bank {
     this.total += amount;
     return this.total; 
   }
+
+  withdraw(amount) {
+    this.total -= amount;
+    return this.total;
+  }
 }
 
 module.exports = Bank 
